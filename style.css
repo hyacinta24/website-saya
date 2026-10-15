@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f7f9fc;
+    color: #333;
+}
+
+section {
+    scroll-margin-top: 80px; 
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e95a80; 
+    padding: 20px 8%;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    font-weight: bold;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+
+.nav-links a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: white;
+}
+
+/* HERO SECTION */
+.hero {
+    background: #3F5EFB;
+background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+    color: white;
+    text-align: center;
+    padding: 50px 20px 80px 20px;
+}
+
+.hero .welcome-text {
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    opacity: 0.9;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.hero .sub-text {
+    font-size: 1rem;
+    opacity: 0.8;
+    margin-bottom: 30px;
+}
+
+.btn-explore {
+    display: inline-block;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 10px 24px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-explore:hover {
+    background-color: white;
+    color: #e95a80;
+}
+
+/* GENERAL SECTION STYLES */
+.section-title {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    position: relative;
+    letter-spacing: 1px;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 3px;
+    background-color: currentColor;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.text-dark {
+    color: #333 !important; /* Memaksa warna tulisan jadi gelap gelap */
+}
+
+/* ABOUT ME SECTION */
+.about-section {
+    padding: 60px 0;
+    text-align: center;
+    background-color: #f7f9fc;
+}
+
+.welcome-text-dark {
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+    color: #777 !important;
+    text-transform: uppercase;
+}
+
+/* Kotak putih ramping pembungkus konten */
+.about-box-putih {
+    background-color: #ffffff !important;
+    padding: 45px 50px;
+    margin: 30px auto 0 auto;
+    width: 65%; /* Mengatur lebar kotak menjadi lebih kecil/ramping */
+    max-width: 750px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    text-align: left;
+}
+
+.about-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.about-section .avatar {
+    background-color: #ffb7c5; /* Warna pink lingkaran huruf H */
+    color: white;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.about-text h3 {
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+    color: #222;
+}
+
+.about-text p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 12px;
+}
+
+/* SKILLS SECTION */
+.skills {
+    padding: 60px 8%;
+    background-color: #f7f9fc;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.skill-card {
+    background: white;
+    padding: 35px 25px;
+    border-radius: 8px;
+    width: 260px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+}
+
+.skill-num {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #e95a80;
+    margin-bottom: 15px;
+}
+
+.skill-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #222;
+    letter-spacing: 0.5px;
+}
+
+.skill-card p {
+    font-size: 0.88rem;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* PROJECTS SECTION */
+.projects {
+    padding: 60px 8% 100px 8%;
+    background-color: #f7f9fc;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    background: white;
+    border-radius: 8px;
+    width: 260px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+    text-align: left;
+}
+
+.project-banner {
+    padding: 30px 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.bg-blue { background-color: #e381ec; }
+.bg-purple { background-color: #ad3fa6; }
+.bg-orange { background-color: #c053af; }
+
+.project-body {
+    padding: 20px;
+}
+
+.project-body h3 {
+    font-size: 1.05rem;
+    margin-bottom: 8px;
+    color: #222;
+}
+
+.project-body p {
+    font-size: 0.88rem;
+    color: #666;
+    line-height: 1.5;
+}
+
+footer {
+    background-color: palevioletred;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 0;
+    font-size: 13px;
+}
